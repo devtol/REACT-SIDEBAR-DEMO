@@ -3,11 +3,17 @@ import * as s from './App.styles';
 
 import Sidebar from './components/Sidebar/Sidebar';
 import MainView from './components/MainView/MainView';
-export default function App() {
+
+const App = () => {
+
+  const backgroundImage = 'images/mountain.jpg';
+
   return (
     <s.App>
-      <Sidebar />
+      <Sidebar backgroundImage={backgroundImage}/>
       <MainView />
     </s.App>
-  )
+  )  
 }
+
+export default App;

@@ -1,9 +1,13 @@
 import React from 'react'
 import * as s from './Sidebar.styles';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+    const { backgroundImage } = props;
     return (
-        <s.SidebarContainer>Sidebar</s.SidebarContainer>
+        <s.SidebarContainer 
+            backgroundImage={backgroundImage}
+        >Sidebar
+        </s.SidebarContainer>
     )
 }
 
